@@ -1,0 +1,42 @@
+﻿using System;
+
+namespace assignment1
+{
+    class MainClass
+    {
+        static void Main(string[] args)
+
+        {
+            //Menu
+            Console.WriteLine("Welcome to Baldi's Kitchen \n Chicken\t Pizza\t Spaghetti\t Steak\n $20.00\t $25.00\t $15.00\t $35.00\t : ");
+            string name = Console.ReadLine();
+ 
+            //Order
+            Console.WriteLine("Select your meal: C-Chicken, P-Pizza, S-Spaghetti, T-Steak ");
+            var meal = Console.ReadLine();
+
+            //People
+            Console.WriteLine("How many people are in your party: ");
+            int total = Convert.ToInt32(Console.ReadLine());
+
+            //Cheesecake
+            Console.WriteLine("Would you like to try out Baldi's homemade cheesecake for $10 per party? 1 for Y/ 2 for N");
+            int y = Convert.ToInt32(Console.ReadLine());
+            int x = 10 * total;
+            
+            if (y == 1)
+            {
+                Console.WriteLine("Your total is $" + x );
+            }
+            else
+            {
+                Console.WriteLine("Your total is " );
+            }
+            Console.WriteLine("Your order was " + meal + "for the party of " + total + " Cheesecake included: " + y);
+
+
+            //Donate
+
+        }
+    }
+}
